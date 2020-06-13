@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
     public GameObject eventSystem;
+    public GameObject SavePanel;
 
     private bool pausingIsAllowed = true;
     public bool PausingIsAllowed
@@ -88,7 +89,7 @@ public class PauseMenu : MonoBehaviour
 
     public void SaveGame()
     {
-
+        SavePanel.SetActive(true);
     }
 
     public void LoadGame()
