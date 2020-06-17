@@ -38,7 +38,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         timer = invincibleTime;
         playerMat = gameObject.GetComponent<MeshRenderer>().material;
-        blackUI = GameObject.FindGameObjectWithTag("BlackScreen");
+        blackUI = GameObject.FindGameObjectWithTag("GameController").GetComponent<ReferenceContainer>().DeathScreen;
         blackUI.SetActive(false);
     }
 

@@ -141,6 +141,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 8502189024674974548, guid: 6192eb32a5163814a99e46f7ce5ca398, type: 3}
   camara: {fileID: 6490032949348849083, guid: 93c592671e1c2db40813f7e920c2837e, type: 3}
+--- !u!1 &46973374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3079190633854474451, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2338578709431852548}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &91491483
 GameObject:
   m_ObjectHideFlags: 0
@@ -217,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PostMortemSoundObject: {fileID: 2918731424359464252, guid: 0813a98860b053d4f94ec73728588914,
     type: 3}
+  DeathScreen: {fileID: 46973374}
 --- !u!1001 &396784948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -320,7 +327,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
@@ -825,6 +832,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3079190633854474451, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4134673979675233540, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
         type: 3}
       propertyPath: eventSystem
@@ -840,7 +852,8 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 466307718348938160, guid: 17294f02c7a2bd1408260a2dd7e40ab2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 17294f02c7a2bd1408260a2dd7e40ab2, type: 3}
 --- !u!1001 &3524590509459389983
 PrefabInstance:
