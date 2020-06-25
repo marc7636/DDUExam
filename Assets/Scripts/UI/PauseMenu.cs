@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,17 +28,11 @@ public class PauseMenu : MonoBehaviour
     }
 
     Image backgroundImage;
-    GameObject[] children;
     CanvasGroup canvasGroup;
 
     private void Awake()
     {
         backgroundImage = GetComponent<Image>();
-        children = new GameObject[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            children[i] = transform.GetChild(i).gameObject;
-        }
         canvasGroup = GetComponentInParent<CanvasGroup>();
         GameIsPaused = backgroundImage.enabled;
         SwapActiveState(GameIsPaused);
@@ -58,27 +52,31 @@ public class PauseMenu : MonoBehaviour
     /// <param name="state">True means the pause menu will be activated, false means the pause menu will be deactivated.</param>
     void SwapActiveState(bool state)
     {
-        if (pausingIsAllowed)
+		if (state && pausingIsAllowed)
+		{
+            backgroundImage.enabled = true;
+            MainPauseMenu.SetActive(true);
+            eventSystem.SetActive(true);
+
+            Time.timeScale = 0f;
+
+            canvasGroup.interactable = true;
+            canvasGroup.blocksRaycasts = true;
+
+            GameIsPaused = true;
+        }
+        else if (!state)
         {
-            backgroundImage.enabled = state;
-            foreach (GameObject child in children)
-            {
-                child.SetActive(state);
-            }
-            eventSystem.SetActive(state);
+            backgroundImage.enabled = false;
+            MainPauseMenu.SetActive(false);
+            eventSystem.SetActive(false);
 
-            if (state)
-            {
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                Time.timeScale = 1f;
-            }
-            canvasGroup.interactable = state;
-            canvasGroup.blocksRaycasts = state;
+            Time.timeScale = 1f;
 
-            GameIsPaused = state;
+            canvasGroup.interactable = false;
+            canvasGroup.blocksRaycasts = false;
+
+            GameIsPaused = false;
         }
     }
 
