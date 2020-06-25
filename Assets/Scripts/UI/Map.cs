@@ -22,7 +22,6 @@ public class Map : MonoBehaviour
     {
         if (Input.GetKeyDown(mapKey))
         {
-            Debug.Log("boom");
             mapIsOpen = !mapIsOpen;
             mainCamera.SetActive(!mapIsOpen);
             camera.SetActive(mapIsOpen);
@@ -40,7 +39,6 @@ public class Map : MonoBehaviour
         if (mapIsOpen)
         {
             transform.Translate(Vector3.Normalize(new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0)) * speed);
-
         }
     }
 }

@@ -4,25 +4,21 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class SaveSlotElement : MonoBehaviour
+public class LoadSlotElement : MonoBehaviour
 {
     public byte SaveSlot;
     public Text NumberText;
     public Text SaveText;
 
-    GameObject player;
-
-    void Start()
+    private void Start()
     {
         NumberText.text = SaveSlot.ToString();
-        player = GameObject.FindGameObjectWithTag("Player");
     }
 
-    public void Save()
+    public void Load()
     {
-        PlayerData playerData = new PlayerData(2, SaveSlot.ToString());
-        SavingFunctionality.SavePlayer(playerData, SaveSlot);
-        UpdateData(playerData);
+        PlayerData playerData = SavingFunctionality.LoadPlayer(SaveSlot);
+        //Load player data
     }
 
     public void DisplayEmptySlot()

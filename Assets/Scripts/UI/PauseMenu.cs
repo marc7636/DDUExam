@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +9,7 @@ public class PauseMenu : MonoBehaviour
     public static bool GameIsPaused = false;
     public GameObject eventSystem;
     public GameObject SavePanel;
+    public GameObject MainPauseMenu;
 
     private bool pausingIsAllowed = true;
     public bool PausingIsAllowed
@@ -85,14 +86,26 @@ public class PauseMenu : MonoBehaviour
         SwapActiveState(false);
     }
 
+    public void BackToMainWindow()
+    {
+        SavePanel.SetActive(false);
+        MainPauseMenu.SetActive(true);
+    }
+
     public void SaveGame()
     {
         SavePanel.SetActive(true);
+        MainPauseMenu.SetActive(false);
     }
 
     public void LoadGame()
     {
+        MainPauseMenu.SetActive(false);
+    }
 
+    public void SettingsMenu()
+    {
+        MainPauseMenu.SetActive(false);
     }
 
     public void Exit()

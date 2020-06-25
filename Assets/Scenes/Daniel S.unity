@@ -627,16 +627,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 100961552593779478, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_PixelPerfect
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 100961552593779478, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_AdditionalShaderChannelsFlag
-      value: 25
-      objectReference: {fileID: 0}
     - target: {fileID: 100961552593779479, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
         type: 3}
       propertyPath: m_RootOrder
@@ -657,11 +647,6 @@ PrefabInstance:
       propertyPath: eventSystem
       value: 
       objectReference: {fileID: 1542418610}
-    - target: {fileID: 754674863571370279, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_Name
-      value: ExitToMenuButton
-      objectReference: {fileID: 0}
     - target: {fileID: 799715987533539413, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
         type: 3}
       propertyPath: m_RootOrder
@@ -671,21 +656,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_RootOrder
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1486317389574591176, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_Name
-      value: ResumeButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 1705514244912626301, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_Name
-      value: SaveGameButton
-      objectReference: {fileID: 0}
-    - target: {fileID: 1928317578355550841, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_Name
-      value: LoadGameButton
       objectReference: {fileID: 0}
     - target: {fileID: 2338578708793957762, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
         type: 3}
@@ -830,11 +800,6 @@ PrefabInstance:
     - target: {fileID: 2338578710510845166, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3079190633854474451, guid: 17294f02c7a2bd1408260a2dd7e40ab2,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4134673979675233540, guid: 17294f02c7a2bd1408260a2dd7e40ab2,

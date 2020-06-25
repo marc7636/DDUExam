@@ -25,18 +25,6 @@ public class PlayerData
         this.HelperString = helperString;
     }
 
-    public PlayerData(int health)
-    {
-        this.Health = health;
-        RNGCryptoServiceProvider rNGCryptoServiceProvider = new RNGCryptoServiceProvider();
-        byte[] vs = new byte[10];
-        rNGCryptoServiceProvider.GetBytes(vs);
-        foreach (byte item in vs)
-        {
-            HelperString += Convert.ToChar(item).ToString();
-        }
-    }
-
     public override string ToString()
     {
         return base.ToString();

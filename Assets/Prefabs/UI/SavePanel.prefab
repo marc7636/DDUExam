@@ -167,6 +167,7 @@ GameObject:
   - component: {fileID: 4325097073963120445}
   - component: {fileID: 4325097074690587863}
   - component: {fileID: 4325097074690587862}
+  - component: {fileID: 7081210724748767562}
   - component: {fileID: 4325097074690587861}
   m_Layer: 5
   m_Name: Save1
@@ -233,7 +234,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4325097074690587861
+--- !u!114 &7081210724748767562
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4325097074690587865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -275,7 +276,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4325097074690587862}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4325097074690587861}
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4325097074690587861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325097074690587865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   SaveSlot: 1
   NumberText: {fileID: 4325097074740824942}
   SaveText: {fileID: 4325097074415160220}
@@ -368,6 +392,7 @@ GameObject:
   - component: {fileID: 4325097074945732389}
   - component: {fileID: 4325097074945732387}
   - component: {fileID: 4325097074945732386}
+  - component: {fileID: 2551725069557148686}
   - component: {fileID: 4325097074945732385}
   m_Layer: 5
   m_Name: Save2
@@ -434,7 +459,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4325097074945732385
+--- !u!114 &2551725069557148686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,7 +468,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4325097074945732388}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -476,7 +501,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4325097074945732386}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4325097074945732385}
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4325097074945732385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325097074945732388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   SaveSlot: 2
   NumberText: {fileID: 4325097075143473455}
   SaveText: {fileID: 4325097074341571333}
@@ -647,6 +695,7 @@ GameObject:
   - component: {fileID: 4325097075191143646}
   - component: {fileID: 4325097075191143644}
   - component: {fileID: 4325097075191143647}
+  - component: {fileID: 1167452286131536174}
   - component: {fileID: 4325097075191143642}
   m_Layer: 5
   m_Name: Save3
@@ -713,7 +762,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4325097075191143642
+--- !u!114 &1167452286131536174
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -722,7 +771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4325097075191143617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
@@ -755,7 +804,30 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4325097075191143647}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4325097075191143642}
+        m_MethodName: Save
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &4325097075191143642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4325097075191143617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 351eab881ac9ebf43b54a936e367c47a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   SaveSlot: 3
   NumberText: {fileID: 4325097075488397422}
   SaveText: {fileID: 4325097075137281582}
